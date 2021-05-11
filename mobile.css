@@ -1,0 +1,57 @@
+/*  Resposive side for moblie & Tablet */
+
+/* Media Quary */
+@media (max-width: 700px) {
+  /*  Resposive Navabr  */
+  .menu-button {
+    display: block;
+  }
+  .menu-button:hover {
+    opacity: 0.5;
+  }
+  /* Logo */
+  .logo {
+    width: 180px;
+  }
+  /* Search */
+  .main-nav ul li input {
+    width: 150px;
+  }
+  /*  Card size */
+  .cart-icon i {
+    font-size: 18px;
+  }
+  /* Shopping cart & reaserch! */
+  .main-nav ul.right-menu {
+    margin-right: 50px;
+  }
+  /* Hide */
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--main-color);
+    width: 50%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.7s ease-in-out;
+  }
+  .main-nav ul.main-menu {
+    margin-top: 50px;
+  }
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc 1px solid;
+    font-size: 14px;
+  }
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+  /* Show navabar */
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+}
